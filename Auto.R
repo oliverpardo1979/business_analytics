@@ -1,6 +1,0 @@
-library(dplyr)
-library(ggplot2)
-library(readxl)
-Auto <- read_excel("Data/Auto.xls")
-View(Auto)
-ggplot(Auto,aes(x=Horsepower,y=MPG)) + geom_point() + scale_x_log10()
