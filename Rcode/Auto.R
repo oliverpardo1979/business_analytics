@@ -1,0 +1,6 @@
+library(dplyr)
+library(ggplot2)
+library(readxl)
+Auto <- read_excel("G:/Mi unidad/NewBox/Teaching/Javeriana/Analitica R/Data/Auto.xls")
+View(Auto)
+ggplot(Auto,aes(x=Horsepower,y=MPG)) + geom_point()
